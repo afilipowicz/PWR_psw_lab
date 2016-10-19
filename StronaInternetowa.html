@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<meta name="description" content="A website about ducks">
+<meta name="keywords" content="ducks,animals,quack,nature">
 <meta charset="UTF-8">
 <title>Kacza strona</title>
 <style>
@@ -24,11 +26,11 @@ table {
 
 <h2 align="right">Kaczka</h2>
 <p align="right"><b>Tylko jedna kaczka &amp;&delta;</b></p>
-<a href="https://pl.wikipedia.org/wiki/Kaczki" target="_blank"><img src="kaczka.jpg" alt="kaczka" width="104" height="142" align="right"></a>
+<a href="https://pl.wikipedia.org/wiki/Kaczki" target="_blank"><img src="kaczka.jpg" alt="kaczka" ="104" height="142" align="right"></a>
 <br>
 
 <h3>Kaczki</h3>
-<img src="kaczki.jpg" alt="kaczki">
+<img src="kaczki.jpg" alt="obrazek kaczek">
 <p>Dużo tych kaczek</p>
 <br>
 
@@ -42,7 +44,7 @@ table {
   <li>Kaczka 1</li>
   <li>Kaczka 2</li>
   <li>Kaczka 3</li>
-</ol>    
+</ol>
 
 <ul>
   <li>Kaczka 1
@@ -61,7 +63,7 @@ table {
 <table style="width:100%">
   <tr>
     <th><b>Imię</b></th>
-    <th><b>Nazwisko</b></th> 
+    <th><b>Nazwisko</b></th>
     <th><b>Wiek</b></th>
   </tr>
   <tr>
@@ -97,7 +99,7 @@ table {
 
 <table style="width:50%">
   <tr>
-	<th rowspan="2">Nazwa</td> 
+	<th rowspan="2">Nazwa</td>
 	<td>James</td>
  </tr>
 <tr>
@@ -108,28 +110,58 @@ table {
 
 <table>
   <tr>
-    <td>Nazwa</td> 
-    <td>Wiek</td> 
-    <td>Płeć</td> 
+    <td>Nazwa</td>
+    <td>Wiek</td>
+    <td>Płeć</td>
   </tr>
   <tr>
-    <td>Johnny</td> 
+    <td>Johnny</td>
     <td>
       <table>
         <tr>
-          <td>23</td> 
-          <td>24</td> 
+          <td>23</td>
+          <td>24</td>
         </tr>
         <tr>
-          <td>26</td> 
-          <td>27</td> 
+          <td>26</td>
+          <td>27</td>
         </tr>
       </table>
-    </td> 
-    <td>Kobieta</td> 
+    </td>
+    <td>Kobieta</td>
   </tr>
 </table>
 <br>
 
+<h2 align="left">Skontaktuj się</h2>
+<form style="width:40%">
+  <fieldset>
+    <legend>Informacje kontaktowe:</legend>
+    Imię:<br>
+    <input type="text" name="imie"><br>
+    Nazwisko:<br>
+    <input type="text" name="nazwisko"><br>
+    Płeć:<br>
+    <input type="radio" name="plec" checked> mężczyzna<br>
+    <input type="radio" name="plec"> kobieta<br>
+    <br>
+    <input type="checkbox" value="sprzedarz"> Jestem hodowca kaczek<br>
+    <input type="checkbox" value="kupno"> Chcę kupić kaczkę<br>
+    <input type="checkbox" value="hobby"> Interesuję się kaczkami hobbystycznie<br>
+    <br>
+    Wiadomość:
+    <br><textarea rows="5" cols="50" wrap="hard" maxlength="200"></textarea><br>
+    <br>
+    Kontakt z oddziałem w:<br>
+    <select>
+     <option>Krakowie</option>
+     <option>Szczecinie</option>
+     <option>Warszawie</option>
+    </select>
+    <br><br>
+    <input type="reset" value="wyczyść">
+    <input type="submit" value="wyślij">
+  </fieldset>
+</form>
 </body>
-</html> 
+</html>
