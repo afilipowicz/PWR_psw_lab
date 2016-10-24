@@ -1,0 +1,72 @@
+﻿<DOCTYPE html>
+<html>
+   <head>
+      <meta charset ="utf-8">
+      <title>CV formularz</title>
+   </head>
+
+   <body>
+      <form autocomplete="on">
+         <p>
+            <label>Imię:
+               <input type="text" autofocus/>
+               (np. <mark>Jakub</mark>)
+	    </label>
+         </p>
+         <p>
+            <label>Nazwisko:
+               <input type="text" required/>
+               (np. Kowalski)
+	    </label>
+         </p>
+         <p>
+            <label for = "txtList">Miesiąc urodzin:
+               <input type="text" id="txtList"
+                  placeholder = "Wybierz miesiąc" list = "months"/>
+               <datalist id = "months">
+                  <option value = "Styczeń">
+                  <option value = "Luty">
+                  <option value = "Marzec">
+                  <option value = "Kwiecień">
+                  <option value = "Maj">
+                  <option value = "Czerwiec">
+                  <option value = "Lipiec">
+                  <option value = "Sierpień">
+                  <option value = "Wrzesień">
+                  <option value = "Październik">
+                  <option value = "Listopad">
+                  <option value = "Grudzień">
+               </datalist>
+	    </label>
+         </p>
+         <p>
+            <label>Email:
+               <input type="email" placeholder = "name@domain.com" required />
+               (name@domain.com)
+	    </label>
+         </p>
+         <p>
+            <label>Tel:
+               <input type="tel" placeholder = "### ### ###" 
+                  pattern = "\d{3} \d{3} \d{3}"/>
+               ### ### ###
+	    </label>
+         </p>
+         <p>
+            <input type="submit" value = "Submit" />
+         </p>
+      </form>
+      <aside>
+         <h1>To jest niepotrzebne</h1>
+         <meter value="2" min="0" max="10">2 out of 10</meter><br>
+         <details>
+            <summary>Info</summary>
+            <p>Zostaw mnie w spokoju</p>
+         </details> 
+      </aside>
+      <footer>
+         <p>2016</p>
+      </footer>
+   </body>
+
+</html>
