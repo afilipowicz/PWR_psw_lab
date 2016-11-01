@@ -1,14 +1,12 @@
-﻿<DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
    <head>
       <meta charset ="utf-8">
       <title>CV formularz szczegółowy</title>
-   </head>
-
-   <style>
+	     <style>
      label { display: block; }
    </style>
-
+   </head>
    <body>
      <p align="left"><a href="lista2.html">Wstecz</a></p>
      <form>
@@ -17,19 +15,17 @@
          <input type="color" value="#0000ff">
        </label>
        <label>
-         <input type="month" placeholder="miesiac urodzenia">
+         <input type="month">
        </label>
-       <label>
          <label for="rangeVal">wzrost w cm:</label>
-       </label>
        <label id="rangeValLabel" style="font-style: normal;"></label>
          <input type ="range" max="300" min="50"
              oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
              step="1" name="rangeVal" id="rangeVal" value="175">
-         </input>
+
        <label>
          Wyszukaj coś na stronie:
-         <input type="search" placeholder="wyszukaj..." autofocus="on">
+         <input type="search" placeholder="wyszukaj..." autofocus>
        </label>
        <label>
          <input type="url" placeholder="Link do strony z dodatkowymi informacjami">
