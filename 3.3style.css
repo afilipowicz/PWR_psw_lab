@@ -108,3 +108,37 @@ nav ul ul li a {
 nav ul ul li a:hover {
     background: #dddddd;
 }
+
+input:checked {
+		color: #1e1e1e
+}
+
+input:disabled {
+	background-color: red;
+	opacity: 0.3
+}
+
+input:enabled {
+	opacity: 1.0
+}
+
+input:focus {
+	background-color: lightblue;
+}
+
+p:empty {
+	background-color: red;
+	opacity: 0.5
+}
+
+fieldset:last-child {
+	background-color: #aaaaaa
+}
+
+input:last-of-type {
+	opacity: 0.2;
+}
+
+li:not(:first-child) a:hover {
+	background-color: red
+}
