@@ -10,12 +10,27 @@ body {background-image: url(kaczka.jpg);
 	  background-color: lightgrey;
 	  text-align:center;}
 
-.thickBorder {
+td.thickBorder {
     border-width: thick;
 }
-.dashedBorder {
+td.dashedBorder {
     border-style: dashed;
 }
-.redBorder {
+td.redBorder {
     border-color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media print
+{
+	body
+		{
+			background-color: white;
+			font-size: 200%;
+		}
 }
