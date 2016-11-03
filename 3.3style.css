@@ -41,7 +41,7 @@ nav {
 
 nav ul {
     background: #aaaaaa;
-    padding: 0 20px;
+    padding: 0px 20px;
     list-style: none;
     position: relative;
     display: inline-block;
@@ -50,7 +50,7 @@ nav ul {
 nav ul ul {
     background: #bbbbbb;
     border-radius: 0px;
-    padding: 0;
+    padding: 0px;
     position: absolute;
     top: 100%;
 		display: none;
@@ -59,7 +59,7 @@ nav ul ul {
 nav ul ul ul {
     background: #cccccc;
     border-radius: 0px;
-    padding: 0;
+    padding: 0px;
     position: absolute;
     top: 100%;
 		display: none;
@@ -89,7 +89,7 @@ nav ul li:hover a {
 
 nav ul li a {
     display: block;
-    padding: 10 10px;
+    padding: 10px 10px;
     color: #757575;
     text-decoration: none;
 }
@@ -141,4 +141,13 @@ input:last-of-type {
 
 li:not(:first-child) a:hover {
 	background-color: red
+}
+
+table, td, th {
+	border: 1px solid gray;
+}
+
+#tableRight {
+	position: absolute;
+	right: 0px
 }
