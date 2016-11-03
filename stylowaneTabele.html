@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stylowane Tabele</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Strona pokazujaca kilka mozliwosci stylowania tabel CSSem">
+        <meta name="keywords" content="css,hmtl,cv,table">
+
+        <link rel = "stylesheet" type = "text/css" href = "3.3style.css">
+    </head>
+    <body>
+        <table border="1", align="right">
+            <caption>tabela
+            </caption>
+            <colgroup span="2" title="title" />
+            <thead>
+                <tr>
+                    <th scope="col">kolumna z bajerami</th>
+                    <th scope="col">normalna kolumna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="thickBorder">gruba obwódka</td>
+                    <td>zwykła cellka</td>
+                </tr>
+                <tr>
+                    <td class="dashedBorder">przerywana obwódka</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="redBorder">kolorowa obwódka</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
