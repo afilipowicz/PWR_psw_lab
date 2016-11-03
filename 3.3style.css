@@ -9,3 +9,13 @@ body {background-image: url(kaczka.jpg);
 	  background-attachment: fixed;
 	  background-color: lightgrey;
 	  text-align:center;}
+
+.thickBorder {
+    border-width: thick;
+}
+.dashedBorder {
+    border-style: dashed;
+}
+.redBorder {
+    border-color: red;
+}
