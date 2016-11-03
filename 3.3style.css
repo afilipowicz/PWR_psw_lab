@@ -34,3 +34,77 @@ td.redBorder {
 			font-size: 200%;
 		}
 }
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    background: #aaaaaa;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul ul {
+    background: #bbbbbb;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+		display: none;
+}
+
+nav ul ul ul {
+    background: #cccccc;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+		display: none;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background: #eeeeee;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li:hover a {
+    color: #333;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10 10px;
+    color: #757575;
+    text-decoration: none;
+}
+
+nav ul ul li {
+    float: none;
+    border-bottom: 1px solid #aaaaaa;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 5px 5px;
+    color: #333;
+}
+
+nav ul ul li a:hover {
+    background: #dddddd;
+}
