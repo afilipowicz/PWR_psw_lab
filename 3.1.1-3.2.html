@@ -8,15 +8,23 @@
 <style type = "text/css">
 em {font-weight: bold;
 	color: black;}
-h1 {font-family: tahoma, helvetica, sans-serif; text-align: center;}
+h1 {font-family: tahoma, helvetica, sans-serif; text-align: center; 
+     text-shadow: 2px 2px #FF0000;}
+div {border: 2px solid #a1a1a1; border-radius: 25px; background-color:rgb(192,192,192);
+     box-shadow: 10px 10px 5px #888888;}
+body {background-color: hsl(120, 100%, 25%);}
+#borderimg1 {border: 10px solid transparent; border-image: url(kaczka.jpg);
+             border-image-repeat: repeat;}
 </style>
 </head>
 <body>
 <h1>Info</h1>
-<p style = "font-size: 20pt; text-align: center;">Curriculum Vitae jest bardzo ważnym dokumentem.<p>
+<div>
+<p id="borderimg1" style = "font-size: 20pt; text-align: center;">Curriculum Vitae jest bardzo ważnym dokumentem.<p>
 <p style = "font-size: 25pt; color: deepskyblue; text-align: center;">Ze względu na przeznaczenie CV, na przykład według polskiego prawa 
 dokument może <em>zawierać</em> (tak jak w innych dokumentach aplikacyjnych) klauzulę zawierającą 
 zgodę na przetwarzanie danych osobowych<p>
 <p>CV może mieć wiele różnych układów.<p>
+</div>
 </body>
 </html>
