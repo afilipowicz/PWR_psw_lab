@@ -79,7 +79,7 @@ nav ul li:hover {
     background: #eeeeee;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover ul {
     display: block;
 }
 

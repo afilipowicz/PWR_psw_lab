@@ -1,11 +1,97 @@
+@font-face {
+	font-family: localFont;
+ 	src: url(SFNSText-Light.otf);
+}
+
 ﻿h1 {text-align:right; text-shadow: 2px 2px #FF0000; padding-right: 50px;}
+
 h2 {text-align:left; padding-left: 10px;}
+
 h3 {text-align:left; padding-left: 100px;}
+
 p {padding-left: 300px;}
+
 body {
 	background: white;
 	background: -webkit-linear-gradient(white, gray);
 	background: -o-linear-gradient(white, gray);
 	background: -moz-linear-gradient(white, gray);
 	background: linear-gradient(white, gray);
+}
+
+@keyframes ProfileImageAnimation {
+	0%   { width: 100px; height: 100px;}
+  50%  { width: 200px; height: 200px;}
+	100% { width: 100px; height: 100px;}
+}
+
+img.animatableProfileImage {
+	width: 100px;
+	height: 100px;
+}
+
+img.animatableProfileImage:hover {
+	-webkit-animation: ProfileImageAnimation 2s;
+	animation: ProfileImageAnimation 2s;
+}
+
+.skillItem {
+	border: solid red;
+	border-width: 2px 2px;
+	border-radius: 15px;
+  height: 18px;
+	padding: 10px;
+  margin: auto;
+	text-align: center;
+	font-family: localFont;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.skillItem:hover {
+	background-color: white;
+	opacity: 0.5;
+}
+
+.flexContainer {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.stiffContainer {
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		columns: 2;
 	}
+}
+
+@media screen and (min-width: 1000px) {
+	.stiffContainer {
+		-webkit-columns: 4;
+		-moz-columns: 4;
+		columns: 4;
+	}
+}
+
+.stiffContainer {
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+p.longText {
+	padding-left: 5px;
+	-webkit-column-span: all;
+	column-span: all;
+	font-size: 20px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+	text-align: left;
+}
