@@ -5,13 +5,14 @@
 <meta name="keywords" content="CV,Curriculum,Vitae,Curriculum Vitae">
 <meta charset="UTF-8">
 <title>Curriculum Vitae</title>
+<script type="text/javascript" src="funkcje.js"></script>
 <link rel = "stylesheet" type = "text/css" href = "Lista4Style.css">
 </head>
-<body>
+<body onload="displayAlertAfterRandomTime()">
 <h1>Curriculum Vitae</h1>
    <h2>Dane osobowe</h2>
    <div>
-   <img class="animatableProfileImage" src="https://s-media-cache-ak0.pinimg.com/originals/3e/f6/54/3ef654e6a45748c0fdebe8fd8118d41a.jpg" alt="profile_photo" >
+   <img id="profilePhoto" class="animatableProfileImage" src="https://s-media-cache-ak0.pinimg.com/originals/3e/f6/54/3ef654e6a45748c0fdebe8fd8118d41a.jpg" alt="profile_photo" onclick="changeImageSource()">
    </div>
     <h3>Imię i nazwisko: </h3> <p>Katarzyna Sawicka</p>
 	  <h3>Data urodzenia: </h3> <p>12.07.1992</p>
@@ -43,25 +44,11 @@
 	<h2 id="Zainteresowania i hobby"></h2>
 	<button id="Dodaj zawartosc" onclick="insertHobbyText()" hidden="hidden">Dodaj text</button>
 	<p id="HobbyParagraph"></p>
-	
-<script>
-    document.getElementById("OpisButton").addEventListener("click", function(){
-	var text = prompt("Wprowadz text", "text");
-    document.getElementById("Opis").innerHTML = text;
-	});
-
-    function addZainteresowaniaIHobby() {
-    "use strict";
-	document.getElementById("Dodaj zawartosc").hidden = "";
-    document.getElementById("Zainteresowania i hobby").innerHTML = "Zainteresowania i hobby";
-    }
-
-    function insertHobbyText() {
-    var text = prompt("Wprowadz text", "text");
-    if(text != null) {
-    document.getElementById("HobbyParagraph").innerHTML = text;
-    }
-    }
-</script>
 </body>
+<script>
+document.getElementById("OpisButton").addEventListener("click", function() {
+  var text = prompt("Wprowadz text", "text");
+  document.getElementById("Opis").innerHTML = text;
+});
+</script>
 </html>
