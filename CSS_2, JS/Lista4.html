@@ -9,7 +9,10 @@
 <link rel = "stylesheet" type = "text/css" href = "Lista4Style.css">
 </head>
 <body onload="displayAlertAfterRandomTime()">
-<h1>Curriculum Vitae</h1>
+<button id="kolorozmieniacz" onclick="changeBackgroundColour()">Zmien kolor tytulu</button>
+<h1 id="header">Curriculum Vitae</h1>
+   <button onclick="addParagraph()">Wydłuż</button>
+   <button onclick="removeParagraph()">Anuluj</button>
    <h2>Dane osobowe</h2>
    <div>
    <img id="profilePhoto" class="animatableProfileImage" src="https://s-media-cache-ak0.pinimg.com/originals/3e/f6/54/3ef654e6a45748c0fdebe8fd8118d41a.jpg" alt="profile_photo" onclick="changeImageSource()">
@@ -50,5 +53,19 @@ document.getElementById("OpisButton").addEventListener("click", function() {
   var text = prompt("Wprowadz text", "text");
   document.getElementById("Opis").innerHTML = text;
 });
+</script>
+<script>
+function addParagraph(){
+	var par = document.createElement("P");
+    var br = document.createElement("br");
+	par.appendChild(br);
+	document.getElementById("header").appendChild(par);
+}
+</script>
+<script>
+function removeParagraph(){
+	var myH = document.getElementById("header");
+	myH.removeChild(myH.childNodes[1]);
+}
 </script>
 </html>
