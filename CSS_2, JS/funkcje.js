@@ -26,3 +26,15 @@ function changeImageSource() {
   var newSrc = window.prompt("Podaj nowy link do zdjęcia");
   document.getElementById("profilePhoto").src = newSrc;
 }
+
+function addParagraph(){
+	var par = document.createElement("P");
+    var br = document.createElement("br");
+	par.appendChild(br);
+	document.getElementById("header").appendChild(par);
+}
+
+function changeBackgroundColour(){
+	var inputColor = prompt("Wprowadz nazwe koloru tla dla tej strony");
+	document.getElementById("header").setAttribute("style", "background-color: " + inputColor);
+}
