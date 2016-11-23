@@ -1,12 +1,12 @@
 function addZainteresowaniaIHobby() {
   "use strict";
-  document.getElementById("Dodaj zawartosc").hidden = "";
-  document.getElementById("Zainteresowania i hobby").innerHTML = "Zainteresowania i hobby";
+  document.getElementById("DodajZawartosc").hidden = "";
+  document.getElementById("ZainteresowaniaHobby").innerHTML = "Zainteresowania i hobby";
 }
 
 function insertHobbyText() {
   var text = prompt("Wprowadz text", "text");
-  if(text != null) {
+  if (text != null) {
     document.getElementById("HobbyParagraph").innerHTML = text;
   }
 }
@@ -23,6 +23,6 @@ function displayAlertAfterRandomTime() {
 }
 
 function changeImageSource() {
-  var newSrc = window.prompt("Podaj nowy link do zdjęcia")
-  document.getElementById("profilePhoto").src = newSrc
+  var newSrc = window.prompt("Podaj nowy link do zdjęcia");
+  document.getElementById("profilePhoto").src = newSrc;
 }
