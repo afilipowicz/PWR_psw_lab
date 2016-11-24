@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="A website about CV">
+<meta name="keywords" content="CV,Curriculum,Vitae,Curriculum Vitae,Contact">
+<meta charset="UTF-8">
+<title>Curriculum Vitae - Kontakt</title>
+<script type="text/javascript" src="funkcje-kontakt.js"></script>
+</head>
+<body onkeydown="keyPressedInInput(event)">
+  <form id="forma">
+    <input id="emailInputForm" type="text" onfocus="emailFocus()" onblur="emailBlur()" value="john@appleseed.com"><br>
+    <textarea id="msgTextareaForm" rows="5" cols="50" wrap="hard" placeholder="wiadomość" maxlength="200"></textarea><br>
+    Wyślij kopię do mnie?
+    <select id="selectInputForm" onblur="formBlur()">
+      <option>--</option>
+      <option id="yesSelectInputForm">Tak</option>
+      <option id="noSelectInputForm">Nie</option>
+    </select>
+  </form>
+</body>
+</html>

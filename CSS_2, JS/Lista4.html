@@ -11,8 +11,9 @@
 <body onload="displayAlertAfterRandomTime()">
 <button id="kolorozmieniacz" onclick="changeBackgroundColour()">Zmien kolor tytulu</button>
 <h1 id="header">Curriculum Vitae</h1>
+   <a href="Lista4-kontakt.html">kontakt</a><br>
    <button onclick="addParagraph()">Wydłuż</button>
-   <button onclick="removeParagraph()">Anuluj</button>
+   <button onclick="removeParagraph()">Skróć</button>
    <h2>Dane osobowe</h2>
    <div>
    <img id="profilePhoto" class="animatableProfileImage" src="https://s-media-cache-ak0.pinimg.com/originals/3e/f6/54/3ef654e6a45748c0fdebe8fd8118d41a.jpg" alt="profile_photo" onclick="changeImageSource()">
@@ -31,12 +32,12 @@
    <h2>Dodatkowe informacje</h2>
     <h3>Umiejętności:</h3>
     <ul class="flexContainer">
-      <li class="skillItem">HTML 5</li>
-      <li class="skillItem">CSS 3</li>
-      <li class="skillItem">Swift</li>
-      <li class="skillItem">Objective-C</li>
-      <li class="skillItem">iOS</li>
-      <li class="skillItem">OSX</li>
+      <li class="skillItem" onmousedown="openAppropriateWebsite(this)">HTML 5</li>
+      <li class="skillItem" onmousedown="openAppropriateWebsite(this)">CSS 3</li>
+      <li class="skillItem" onmousedown="openAppropriateWebsite(this)">Swift</li>
+      <li class="skillItem" onmousedown="openAppropriateWebsite(this)">Objective-C</li>
+      <li class="skillItem" onmousedown="openAppropriateWebsite(this)">iOS</li>
+      <li class="skillItem" onmousedown="openAppropriateWebsite(this)">OSX</li>
     </ul>
     <h3>Opis doświadczenia:</h3>
     <div class="stiffContainer">
@@ -53,19 +54,5 @@ document.getElementById("OpisButton").addEventListener("click", function() {
   var text = prompt("Wprowadz text", "text");
   document.getElementById("Opis").innerHTML = text;
 });
-</script>
-<script>
-function addParagraph(){
-	var par = document.createElement("P");
-    var br = document.createElement("br");
-	par.appendChild(br);
-	document.getElementById("header").appendChild(par);
-}
-</script>
-<script>
-function removeParagraph(){
-	var myH = document.getElementById("header");
-	myH.removeChild(myH.childNodes[1]);
-}
 </script>
 </html>
