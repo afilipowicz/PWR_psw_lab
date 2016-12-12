@@ -1,0 +1,19 @@
+﻿﻿h1 {text-align: center;}
+
+h2 {text-align: center; font-size: 200%;}
+
+p {text-align: center;}
+
+html{height: 100%;}
+
+body {
+	background: white;
+	background: -webkit-linear-gradient(white, gray);
+	background: -o-linear-gradient(white, gray);
+	background: -moz-linear-gradient(white, gray);
+	background: linear-gradient(white, gray);
+	min-height: 100%;
+	position: relative;
+}
+
+html body{margin: 0; padding: 0;}

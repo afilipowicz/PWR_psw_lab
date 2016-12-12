@@ -1,0 +1,4 @@
+menu -> listy tworzone dynamicznie z tablic
+po walidacji danych zeby wracalo do strony glownej
+dane do bazy danych
+nowa strona informacje o firmie

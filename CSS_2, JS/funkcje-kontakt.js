@@ -1,10 +1,10 @@
 function emailFocus() {
-  var emailInput = document.forms.item(0).elements.item(0);
+  var emailInput = document.forms.item(0).elements.item(3);
   emailInput.value = "";
 }
 
 function emailBlur() {
-  var emailInput = document.getElementsByTagName("input")[0];
+  var emailInput = document.getElementsByTagName("input")[3];
   if (emailInput.value == "") {
     emailInput.value = "john@appleseed.com";
   }
