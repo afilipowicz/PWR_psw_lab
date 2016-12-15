@@ -14,8 +14,8 @@
 			$nazwisko = mysql_real_escape_string($nazwisko);
 			$telefon = mysql_real_escape_string($telefon);
 			$email = mysql_real_escape_string($email);print($imie);
-			//if (!filter_var($email, FILTER_VALIDATE_EMAIL) or !preg_match("/^[0-9]{2}-[0-9]{9}$/", $telefon))
-				//die("emailerror");
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL) or !preg_match("/^[0-9]{2}-[0-9]{9}$/", $telefon))
+				die("emailerror");
 			
 			$query = "INSERT INTO uzytkownicy (Imie, Nazwisko, Telefon, Email) VALUES ('$imie', '$nazwisko', '$telefon', '$email')";
 			if(!($result = mysql_query($query, $database)))
@@ -23,5 +23,5 @@
 			
 			mysql_close($database);
 			
-			header('Location: http://localhost/phpE/form.php');
+			header('Location: http://localhost/phpE/Lista4.html');
 			 ?>
