@@ -23,7 +23,3 @@ function keyPressedInInput(event) {
       document.forms.item(0).reset();
     }
 }
-
-function validate() {
-    return false;
-}

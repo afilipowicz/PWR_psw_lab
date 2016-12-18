@@ -8,11 +8,11 @@
 <script type="text/javascript" src="funkcje-kontakt.js"></script>
 </head>
 <body onkeydown="keyPressedInInput(event)">
-  <form method="post" action="form.php" id="forma" onsubmit="return validate()">
-	<label>Imię: </label><input name="imieInput" type="text"><br>
-	<label>Nazwisko: </label><input name="nazwiskoInput" type="text"><br>
-	<label>Telefon: </label><input name="telefonInput" type="text"><br>
-    <label>E-mail: </label><input id="emailInputForm" name="emailInput" type="text" onfocus="emailFocus()" onblur="emailBlur()" value="john@appleseed.com"><br>
+  <form method="post" action="form.php" id="forma">
+	<label>Imię: </label><input name="imieInput" type="text" required><br>
+	<label>Nazwisko: </label><input name="nazwiskoInput" type="text" required><br>
+	<label>Telefon: </label><input name="telefonInput" type="text" placeholder="### ### ###" pattern="\d{3} \d{3} \d{3}" required><br>
+    <label>E-mail: </label><input id="emailInputForm" name="emailInput" type="text" onfocus="emailFocus()" onblur="emailBlur()" value="john@appleseed.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required><br>
 	<textarea id="msgTextareaForm" name="textArea" rows="5" cols="50" wrap="hard" placeholder="wiadomość" maxlength="200"></textarea><br>
     Wyślij kopię do mnie?
     <select id="selectInputForm" name="selectInput" onblur="formBlur()">

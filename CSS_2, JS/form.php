@@ -10,11 +10,15 @@
 			$nazwisko = $_POST["nazwiskoInput"];
 			$telefon = $_POST["telefonInput"];
 			$email = $_POST["emailInput"];
+
+			if(!isset($imie) or !isset($nazwisko) or !isset($telefon) or !isset($email))
+			    die("empty values error");
+
 			$imie = mysql_real_escape_string($imie);
 			$nazwisko = mysql_real_escape_string($nazwisko);
 			$telefon = mysql_real_escape_string($telefon);
 			$email = mysql_real_escape_string($email);print($imie);
-			if (!filter_var($email, FILTER_VALIDATE_EMAIL) or !preg_match("/^[0-9]{2}-[0-9]{9}$/", $telefon))
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL) or !preg_match("/^[0-9]{3}\s[0-9]{3}\s[0-9]{3}$/", $telefon))
 				die("emailerror");
 			
 			$query = "INSERT INTO uzytkownicy (Imie, Nazwisko, Telefon, Email) VALUES ('$imie', '$nazwisko', '$telefon', '$email')";
