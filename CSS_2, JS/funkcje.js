@@ -1,13 +1,15 @@
 function addZainteresowaniaIHobby() {
   "use strict";
+  document.getElementById("ZainteresowaniaHobbyButton").hidden = "";
   document.getElementById("DodajZawartosc").hidden = "";
-  document.getElementById("ZainteresowaniaHobby").innerHTML = "Zainteresowania i hobby";
+  document.getElementById("HobbyButton").hidden = "";
+  document.getElementById("ZainteresowaniaHobbyEditableText").innerHTML = "Zainteresowania i hobby";
 }
 
 function insertHobbyText() {
   var text = prompt("Wprowadz text", "text");
   if (text != null) {
-    document.getElementById("HobbyParagraph").innerHTML = text;
+    document.getElementById("HobbyEditableText").innerHTML = text;
   }
 }
 
@@ -31,17 +33,17 @@ function addParagraph() {
 	var par = document.createElement("P");
   var br = document.createElement("br");
 	par.appendChild(br);
-	document.getElementById("header").appendChild(par);
+	document.getElementById("HeaderEditableText").appendChild(par);
 }
 
 function removeParagraph() {
-	var myH = document.getElementById("header");
+	var myH = document.getElementById("HeaderEditableText");
 	myH.removeChild(myH.childNodes[1]);
 }
 
 function changeBackgroundColour() {
 	var inputColor = prompt("Wprowadz nazwe koloru tla dla tej strony");
-	document.getElementById("header").setAttribute("style", "background-color: " + inputColor);
+	document.getElementById("HeaderEditableText").setAttribute("style", "background-color: " + inputColor);
 }
 
 function openAppropriateWebsite(item) {
@@ -53,4 +55,9 @@ function openAppropriateWebsite(item) {
       window.open("https://github.com/afilipowicz");
       break;
   }
+}
+
+function zmienTekst(button) {
+  var text = prompt("Wprowadz text", "text");
+  document.getElementById(button.id.replace("Button", "") + "EditableText").innerHTML = text;
 }

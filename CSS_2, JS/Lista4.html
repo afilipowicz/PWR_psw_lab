@@ -9,27 +9,34 @@
 <link rel = "stylesheet" type = "text/css" href = "Lista4Style.css">
 </head>
 <body onload="displayAlertAfterRandomTime()">
+<button id="WlaczWylaczEdycjeButton" onclick="">Edytuj</Button>
 <button id="kolorozmieniacz" onclick="changeBackgroundColour()">Zmien kolor tytulu</button>
-<h1 id="header">Curriculum Vitae</h1>
+<button id="HeaderButton" onclick="zmienTekst(this)">Zmień</button>
+<h1 id="HeaderEditableText">Curriculum Vitae</h1>
    <button onclick="addParagraph()">Wydłuż</button>
    <button onclick="removeParagraph()">Skróć</button>
-   <h2>Dane osobowe</h2>
+   <button id="DaneOsoboweButton" onclick="zmienTekst(this)">Zmień</button>
+   <h2 id="DaneOsoboweEditableText">Dane osobowe</h2>
    <div>
-   <img id="profilePhoto" class="animatableProfileImage" src="https://s-media-cache-ak0.pinimg.com/originals/3e/f6/54/3ef654e6a45748c0fdebe8fd8118d41a.jpg" alt="profile_photo" onclick="changeImageSource()">
+     <img id="profilePhoto" class="animatableProfileImage" src="https://s-media-cache-ak0.pinimg.com/originals/3e/f6/54/3ef654e6a45748c0fdebe8fd8118d41a.jpg" alt="profile_photo" onclick="changeImageSource()">
    </div>
     <h3>Imię i nazwisko: </h3> <p>Katarzyna Sawicka</p>
 	  <h3>Data urodzenia: </h3> <p>12.07.1992</p>
 	  <h3>Adres: </h3> <p>Mazowiecka 19/9, 02- 005 Warszawa</p>
 	  <h3>Telefon: </h3> <p>938 323 842</p>
 	  <h3>E-mail: </h3> <p>sawicka@mail.com</p>
-   <h2>Wykształcenie</h2>
+   <button id="WyksztalcenieButton" onclick="zmienTekst(this)">Zmień</button>
+   <h2 id="WyksztalcenieEditableText">Wykształcenie</h2>
     <h3>09/2005 - 05.2009</h3> <p>Uniewesytet Warszawski - mgr administracji</p>
 	  <h3>06/1998 - 12.2002</h3> <p>4 Liceum Ogólnokształcące im T. Kościuszki w Ołwocku</p>
-   <h2>Doświadczenie zawodowe</h2>
+   <button id="DoswiadczenieButton" onclick="zmienTekst(this)">Zmień</button>
+   <h2 id="DoswiadczenieEditableText">Doświadczenie zawodowe</h2>
     <h3>02/2013 - dzisiaj</h3> <p>Starszy sprzedawca - MOTO Trans</p>
 	  <h3>02/2012 - 01/2013</h3> <p>Kasjer/sprzedawca - MOTO Trans</p>
-   <h2>Dodatkowe informacje</h2>
-    <h3>Umiejętności:</h3>
+   <button id="WiecejInfoButton" onclick="zmienTekst(this)">Zmień</button>
+   <h2 id="WiecejInfoEditableText">Dodatkowe informacje</h2>
+    <button id="UmiejetnosciHedaerButton" onclick="zmienTekst(this)">Zmień</button>
+    <h3 id="UmiejetnosciHeaderEditableText">Umiejętności:</h3>
     <ul class="flexContainer">
       <li class="skillItem" onmousedown="openAppropriateWebsite(this)">HTML 5</li>
       <li class="skillItem" onmousedown="openAppropriateWebsite(this)">CSS 3</li>
@@ -38,22 +45,18 @@
       <li class="skillItem" onmousedown="openAppropriateWebsite(this)">iOS</li>
       <li class="skillItem" onmousedown="openAppropriateWebsite(this)">OSX</li>
     </ul>
-    <h3>Opis doświadczenia:</h3>
+    <button id="OpisHeaderButton" onclick="zmienTekst(this)">Zmień</button>
+    <h3 id="OpisHeaderEditableText">Opis doświadczenia:</h3>
     <div class="stiffContainer">
-	  <button id="OpisButton">Zmień</button>
-      <p class="longText" id="Opis">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+  	  <button id="OpisButton" onclick="zmienTekst(this)">Zmień</button>
+      <p class="longText" id="OpisEditableText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
     </div>
 	<button onclick="addZainteresowaniaIHobby()">Dodaj hobby</button>
-	<h2 id="ZainteresowaniaHobby"></h2>
+  <button id="ZainteresowaniaHobbyButton" onclick="zmienTekst(this)" hidden="hidden">Zmień</button>
+	<h2 id="ZainteresowaniaHobbyEditableText"></h2>
 	<button id="DodajZawartosc" onclick="insertHobbyText()" hidden="hidden">Dodaj text</button>
-	<p id="HobbyParagraph"></p>
-	
-	<a href="Lista4-kontakt.html">kontakt</a>
+  <button id="HobbyButton" onclick="zmienTekst(this)" hidden="hidden">Zmień</button>
+	<p id="HobbyEditableText"></p>
+  <a href="Lista4-kontakt.html">kontakt</a>
 </body>
-<script>
-document.getElementById("OpisButton").addEventListener("click", function() {
-  var text = prompt("Wprowadz text", "text");
-  document.getElementById("Opis").innerHTML = text;
-});
-</script>
 </html>
