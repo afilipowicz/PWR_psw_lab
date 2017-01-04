@@ -11,15 +11,15 @@ $haslo = $_POST["hasloInput"];
 if(!isset($login) or !isset($haslo))
     die("empty values error");
 
-$query = "SELECT id FROM Konta WHERE Login = '$login' AND Haslo= '$haslo'";
+$query = "SELECT id FROM Uzytkownicy WHERE Email = '$login' AND Haslo= '$haslo'";
 $result = mysql_query($query, $database);
 if(mysql_num_rows($result) == 0) {
     die("Niepoprawne dane logowania, cofnij aby spróbować ponownie.");
 }
 else
-    setcookie("Zalogowany", $login, time() + 30 );
+    setcookie("Zalogowany", $login, time() + 30, "/" );
 
 mysql_close($database);
 
-header('Location: http://localhost/phpE/Informacje.html');
+header('Location: http://localhost/phpE/Personal Website/sources/personal.html');
 ?>

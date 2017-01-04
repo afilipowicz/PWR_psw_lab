@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta name="description" content="Personal website of Johnny Appleseed">
+    <meta name="keywords" content="CV,Curriculum,Vitae,Johnny,Appleseed">
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel = "stylesheet" type = "text/css" href = "../styles/main.css">
+    <link rel = "stylesheet" type = "text/css" href = "../styles/login.css">
+</head>
+<body>
+<section class="container">
+    <div class="loginContainer">
+        <!-- <div class="loginPopover"> -->
+        <form class="loginPopover" method="post" action="../functions/form.php" id="form">
+            <input id="emailInputForm" name="emailInput" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="loginInput" placeholder="E-mail/Login" required>
+            <input name="hasloInput" type="password" class="loginInput" pattern=".{8,20}" placeholder="Password(8-20 characters)" required>
+            <input name="imieInput" type="text" class="loginInput" placeholder="Forename" required>
+            <input name="nazwiskoInput" type="text" class="loginInput" placeholder="Surname" required>
+            <input name="telefonInput" type="text" pattern="\d{3} \d{3} \d{3}" class="loginInput" placeholder="Phone number(### ### ###)" required>
+            <input class="submitInput" type="submit" value="REGISTER">
+        </form>
+        <!-- </div> -->
+    </div>
+    <div class="footerContainer">
+        <h3 class="footerText">© 2016 Johnny Appleseed</h3>
+    </div>
+</section>
+</body>
+</html>
