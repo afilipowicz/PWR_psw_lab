@@ -1,10 +1,18 @@
 ﻿function checkIfLogged() {
     var cookie = getCookie("Zalogowany");
     if(!(cookie.localeCompare("") == 0)){
-        document.getElementById("logIn").innerHTML = "LOGGED IN";
-        document.getElementById("about").style.visibility = "visible";
-    }else
-        //document.getElementById("about").style.visibility = "hidden";
+        document.getElementById("logIn").innerHTML = "WYLOGUJ";
+        //document.getElementById("content").style.visibility = "visible";
+        document.getElementById("alert").style.visibility = "hidden";
+        document.getElementById("content").style.display = "inline";
+        document.getElementByid("logowanie").setAttribute("href", "#");
+        document.getElementByid("logowanie").setAttribute("onclick", "logOut();");
+    }else {
+        //document.getElementById("content").style.visibility = "hidden";
+        document.getElementById("alert").style.visibility = "visible";
+
+        document.getElementById("content").style.display = "none";
+    }
 }
 
 function getCookie(cname) {
@@ -20,4 +28,8 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+
+function logOut() {
+    document.cookie = "Zalogowany" + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
