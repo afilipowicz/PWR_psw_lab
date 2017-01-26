@@ -9,19 +9,31 @@
 </head>
 <body>
   <section class="container">
+<!-- <<<<<<< HEAD -->
     <div class="header">
       <h3>LOGIN</h3>
     </div>
-    <div class="loginContainer">
-      <!-- <div class="loginPopover"> -->
+    <!-- <div class="loginContainer">
+      <div class="loginPopover">
         <form class="loginPopover" method="post" action="form.php" onsubmit="return true;">
           <input id="emailInput" class="loginInput" type="email" placeholder="email" autofocus>
           <input class="loginInput" type="password" placeholder="password">
+======= -->
+    <div class="loginContainer">
+      <!-- <div class="loginPopover"> -->
+        <form id="forma" class="loginPopover" method="post" action="../functions/LogowaniePhp.php">
+          <input name="loginInput" class="loginInput" type="email" placeholder="E-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required autofocus>
+          <input name="hasloInput" class="loginInput" type="password" placeholder="Password" pattern=".{8,20}" required>
+<!-- >>>>>>> 5adeabacd5b1a5662f5ec7ee25dee413f0dc7a48 -->
           <input class="submitInput" type="submit" value="LOGIN">
         </form>
       <!-- </div> -->
     </div>
     <div class="footerContainer">
+<!-- <<<<<<< HEAD
+======= -->
+      <a href="../sources/register.html"><h3 class="footerText">Register</h3></a>
+<!-- >>>>>>> 5adeabacd5b1a5662f5ec7ee25dee413f0dc7a48 -->
       <h3 class="footerText">© 2016 Johnny Appleseed</h3>
     </div>
   </section>
