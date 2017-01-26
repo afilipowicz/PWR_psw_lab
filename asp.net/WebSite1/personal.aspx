@@ -1,0 +1,57 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="personal.aspx.vb" Inherits="_Default" %>
+
+<!DOCTYPE html>
+<head>
+<meta name="description" content="Personal website of Johnny Appleseed">
+<meta name="keywords" content="CV,Curriculum,Vitae,Johnny,Appleseed">
+<meta charset="UTF-8">
+<title>CV</title>
+<link rel = "stylesheet" type = "text/css" href = "Styles/main.css"/>
+<link rel = "stylesheet" type = "text/css" href = "Styles/login.css"/>
+<link rel = "stylesheet" type = "text/css" href = "Styles/personal.css"/>
+  <script type="text/javascript" src="Functions/personal.js"></script>
+</head>
+<body onload="checkIfLogged()">
+  <section class="container">
+    <a name="top"></a>
+    <ul class="header">
+      <li><a href="login.aspx" id="logowanie"><h3 id="logIn">ZALOGUJ</h3></a></li>
+      <li><a href="Info.aspx" id="info"><h3>O STRONIE</h3></a></li>
+      <li id="Dane osobowe"><a href="#daneOsobowe"><h3>DANE OSOBOWE</h3></a></li>
+      <li id="Doświadczenie"><a href="#doswiadczenie"><h3>DOSWIADCZENIE</h3></a></li>
+      <li id="Wykształcenie"><a href="#wyksztalcenie"><h3>WYKSZTALCENIE</h3></a></li>
+    </ul>
+    <div class="loginContainer">
+    </div>
+    <!--<img src="../resources/stub.png"/>-->
+    <h4 id="alert" style="color:red;">Aby korzystać z szablonu CV musisz się zalogować!</h4>
+    <div id="content">
+    <a name="daneOsobowe"><h4>Dane osobowe</h4></a>
+    <h5>Imię i nazwisko: </h5> <p contenteditable="true">Katarzyna Sawicka</p>
+    <h5>Data urodzenia: </h5> <p contenteditable="true">12.07.1992</p>
+    <h5>Adres: </h5> <p contenteditable="true">Mazowiecka 19/9, 02- 005 Warszawa</p>
+    <h5>Telefon: </h5> <p contenteditable="true">938 323 842</p>
+    <h5>E-mail: </h5> <p contenteditable="true">sawicka@mail.com</p>
+    <a name="wyksztalcenie"><h4>Wykształcenie</h4></a>
+    <h5 contenteditable="true">09/2005 - 05.2009</h5> <p contenteditable="true">Uniewesytet Warszawski - mgr administracji</p>
+    <h5 contenteditable="true">06/1998 - 12.2002</h5> <p contenteditable="true">4 Liceum Ogólnokształcące im T. Kościuszki w Ołwocku</p>
+    <h5 contenteditable="true">06/1998 - 12.2002</h5> <p contenteditable="true">4 Liceum Ogólnokształcące im T. Kościuszki w Ołwocku</p>
+    <h5 contenteditable="true">06/1998 - 12.2002</h5> <p contenteditable="true">4 Liceum Ogólnokształcące im T. Kościuszki w Ołwocku</p>
+    <h5 contenteditable="true">06/1998 - 12.2002</h5> <p contenteditable="true">4 Liceum Ogólnokształcące im T. Kościuszki w Ołwocku</p>
+    <a name="doswiadczenie"><h4>Doświadczenie zawodowe</h4></a>
+    <h5 contenteditable="true">02/2013 - dzisiaj</h5> <p contenteditable="true">Starszy sprzedawca - MOTO Trans</p>
+    <h5 contenteditable="true">02/2012 - 01/2013</h5> <p contenteditable="true">Kasjer/sprzedawca - MOTO Trans</p>
+    <h5 contenteditable="true">02/2012 - 01/2013</h5> <p contenteditable="true">Kasjer/sprzedawca - MOTO Trans</p>
+    <h5 contenteditable="true">02/2012 - 01/2013</h5> <p contenteditable="true">Kasjer/sprzedawca - MOTO Trans</p>
+    <h5 contenteditable="true">02/2012 - 01/2013</h5> <p contenteditable="true">Kasjer/sprzedawca - MOTO Trans</p>
+    <h4 contenteditable="true">Zainteresowanie i hobby</h4>
+    <p contenteditable="true">Czytanie, pływanie, piłka nożna.</p>
+    </div>
+
+    <div class="footerContainer">
+      <h3 class="footerText">© 2016 Johnny Appleseed</h3>
+      <h3 class="footerText"><a href="Functions/readCookie.php">Cookies</a></h3>
+    </div>
+  </section>
+</body>
+</html>

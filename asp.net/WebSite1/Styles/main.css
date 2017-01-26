@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+h3 {
+  font-family: ProximaNova-Bold;
+  font-size: 30px;
+  color: rgba(80, 80, 80, 0.8);
+  letter-spacing: 2.81px;
+}
+
+h3.footerText {
+  color: white;
+  margin-left: 40px;
+}
+
+.footerContainer {
+  background: black;
+  width: 100%;
+  min-height: 55px;
+  max-height: 55px;
+  display: flex;
+  align-items: center;
+}
